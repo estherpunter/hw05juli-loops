@@ -9,11 +9,17 @@ const scores = [
     {name: 'Rianne', score: 66, grade: null}
 ];
 
+// for (let i = 0; i < scores.length; i++) {
+//     console.log(scores[i].score);
+//
+// }
+
+
 // Verwachtte uitkomsten:
 // 83
 // 77
 // 92
-// 66ç
+// 66
 // ==========================================
 
 
@@ -32,8 +38,33 @@ const scores = [
 // D
 // ==========================================
 
-
-
+// for (let i = 0; i < scores.length; i++) {
+//     const gradeLetter = scores[i].score;
+//     // console.log(grade);
+//
+//     if (gradeLetter < 60) {
+//         scores[i].grade = 'F'
+//         console.log('F')
+//     }
+//     if (gradeLetter >= 60 && gradeLetter < 70) {
+//         scores[i].grade = 'D'
+//         console.log('D')
+//     }
+//     if (gradeLetter >= 70 && gradeLetter < 80) {
+//         scores[i].grade = 'C'
+//         console.log('C')
+//     }
+//     if (gradeLetter >= 80 && gradeLetter< 90) {
+//         scores[i].grade = 'B'
+//         console.log('B')
+//     }
+//     if (gradeLetter >= 90 && gradeLetter < 100) {
+//         scores[i].grade = 'A'
+//         console.log('A')
+//     }
+// }
+//
+// console.log(scores);
 
 
 // ==========================================
@@ -49,10 +80,6 @@ const scores = [
 //  ];
 // ==========================================
 
-
-
-
-
 // ==========================================
 // Opdracht 2
 // Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
@@ -63,6 +90,18 @@ const NOVIEmployees = [
     {firstName: 'Tessa', lastName: 'Steur'},
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
+
+// console.log(NOVIEmployees);
+
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    const email = NOVIEmployees[i].firstName + '.' + NOVIEmployees[i].lastName + '@novi.nl'
+    console.log(email);
+    }
+
+
+console.log(NOVIEmployees);
+
+
 
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
